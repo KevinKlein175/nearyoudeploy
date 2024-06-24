@@ -2,10 +2,10 @@
   "name": "NearYou",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"npm run Codebase_Server_NearYou-main\" \"npm run Codebase_Client_NearYou-main/nearyou-client\"",
-    "Codebase_Server_NearYou-main": "cd server && npm run devStart",
-    "Codebase_Client_NearYou-main/nearyou-client": "cd client && npm start",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd Codebase_Server_NearYou-main && npm run devStart",
+    "client": "cd Codebase_Client_NearYou-main/nearyou-client && npm start",
+    "heroku-postbuild": "cd Codebase_Client_NearYou-main/nearyou-client && npm install && npm run build"
   },
   "dependencies": {
     "concurrently": "^6.2.1"
