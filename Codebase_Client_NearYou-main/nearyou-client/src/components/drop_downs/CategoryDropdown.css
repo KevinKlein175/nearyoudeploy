@@ -1,0 +1,51 @@
+.category-dropdown {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  max-width: 200px;
+  width: 40%;
+  margin-left: 45%;
+}
+
+.category-dropdown label {
+  font-weight: normal;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.category-dropdown button {
+  background-color: #e9aa95;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1220px) {
+  .category-dropdown {
+    left: 0;
+    margin-left: 51%;
+  }
+}
+
+@media (max-width: 870px) {
+  .category-dropdown {
+    margin-left: 220px;
+  }
+}
