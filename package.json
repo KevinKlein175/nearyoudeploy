@@ -10,4 +10,8 @@
   "dependencies": {
     "concurrently": "^6.2.1"
   }
+  "engines": {
+    "node": ">=20.x",
+    "npm": ">=10.7.0"
+  }
 }
