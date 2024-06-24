@@ -5,6 +5,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run devStart",
     "client": "cd client && npm start"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "concurrently": "^6.2.1"
