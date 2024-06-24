@@ -1,12 +1,24 @@
 {
-  "name": "NearYou",
+  "name": "codebase",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm run devStart",
-    "client": "cd client && npm start"
+    "devStart": "nodemon app.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "concurrently": "^6.2.1"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
