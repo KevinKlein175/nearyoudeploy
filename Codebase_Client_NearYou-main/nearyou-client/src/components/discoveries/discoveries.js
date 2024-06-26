@@ -22,11 +22,11 @@ const Discoveries = () => {
     try {
       const response = await fetch(
         //Using a GET request to fetch the coupons from the backend with distance, longitude and latitude as parameters
-        `http://localhost:3000/api/coupons/nearby/?distance=${distance}&latitude=${location.latitude}&longitude=${location.longitude}`
+        `http://localhost:12888/api/coupons/nearby/?distance=${distance}&latitude=${location.latitude}&longitude=${location.longitude}`
       );
       const data = await response.json(); //data now contains all nearby coupons send from the server
 
-      const baseURL = "http://localhost:3000/"; //currently on localhost, change to the actual URL when deploying
+      const baseURL = "http://localhost:12888/"; //currently on localhost, change to the actual URL when deploying
       //getting the stored coupons from the local storage or an empty array if there are none
       const storedCoupons = JSON.parse(localStorage.getItem("coupons")) || [];
       const currentTime = Date.now();
