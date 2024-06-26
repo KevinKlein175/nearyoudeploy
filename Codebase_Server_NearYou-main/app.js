@@ -5,7 +5,11 @@ const messageRoutes = require("./api/messageRoutes");
 const { setupDatabase } = require("./models/index");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 27946; 
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 
 // Middleware
 app.use(express.json());
