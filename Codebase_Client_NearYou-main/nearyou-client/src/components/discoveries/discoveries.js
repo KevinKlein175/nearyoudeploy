@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from "react";
 import "./discoveries.css";
 import Coupons from "./coupons";
@@ -92,7 +93,7 @@ const Discoveries = () => {
   const claimCoupon = async (id) => {
     try {
       //using a PATCH request to claim the coupon with the specified id
-      const response = await fetch(`http://localhost:3000/api/coupons/${id}`, {
+      const response = await fetch(`http://localhost:12888/api/coupons/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
