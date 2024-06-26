@@ -57,7 +57,7 @@ const Messages = () => {
     });
     // POST the message to the server
     try {
-      const response = await fetch("http://localhost:12888/api/messages", {
+      const response = await fetch("http://localhost:24449/api/messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -94,7 +94,7 @@ const Messages = () => {
     const localMessages = JSON.parse(localStorage.getItem("myMessages")) || [];
     try {
       const response = await fetch(
-        `http://localhost:12888/api/messages/nearby?latitude=${location.latitude}&longitude=${location.longitude}`,
+        `http://localhost:24449/api/messages/nearby?latitude=${location.latitude}&longitude=${location.longitude}`,
         {
           method: "GET",
           headers: {
