@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./speechBubbles.css";
 
 function SpeechBubble({ message, isMyMessage, distance }) {
