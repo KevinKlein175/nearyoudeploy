@@ -51,7 +51,7 @@ const Create = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/coupons", {
+      const response = await fetch("http://localhost:12888/api/coupons", {
         method: "POST",
         body: formData,
       });
